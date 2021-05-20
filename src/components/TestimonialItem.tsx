@@ -13,8 +13,8 @@ export default () => (
         <FontAwesomeIcon icon={faQuoteRight} className="quote-sign-right" />
       </p>
       <img src="img/testimonial-1.jpg" className="testimonial-img" alt="" />
-      <h3>Saul Goodman</h3>
-      <h4>Ceo &amp; Founder</h4>
+      <h3>Sapna</h3>
+      <h4>Ceo &amp; L2M</h4>
     </div>
   </div>
 );
