@@ -12,7 +12,7 @@ export default () => (
         et. Maecen aliquam, risus at semper.
         <FontAwesomeIcon icon={faQuoteRight} className="quote-sign-right" />
       </p>
-      <img src="img/testimonial-1.jpg" className="testimonial-img" alt="" />
+      <img src="img/testimonial-3.jpg" className="testimonial-img" alt="" />
       <h3>Sapna</h3>
       <h4>Ceo &amp; L2M</h4>
     </div>
