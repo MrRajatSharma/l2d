@@ -608,21 +608,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   float: left;
 }
 
-#services .box .icon i {
-  color: #444;
+#services .box .icon svg {
+  color: #a3ebd5;
   font-size: 64px;
   transition: 0.5s;
   line-height: 0;
   margin-top: 34px;
 }
 
-#services .box .icon i:before {
-  background: #0c2e8a;
-  background: linear-gradient(45deg, $primary 0%, #a3ebd5 100%);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 #services .box h4 {
   margin-left: 100px;
@@ -759,12 +752,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #testimonials .testimonial-item {
-  box-sizing: content-box;
-  padding: 30px 30px 0 30px;
-  margin: 30px 15px;
+  padding: 20px 20px;
   text-align: center;
-  min-height: 350px;
-  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  
+  .testimonial-item-wrapper {
+    padding: 2em;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  }
 }
 
 @media (max-width: 767px) {
