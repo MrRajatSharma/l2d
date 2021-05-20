@@ -1,7 +1,13 @@
 import React, { useState } from "react";
-import { faCar } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCar,
+  faEnvelope,
+  faMapPin,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Slider from "react-slick";
+import TestimonialItem from "./TestimonialItem";
 
 const settings = {
   // centerMode: true,
@@ -11,6 +17,7 @@ const settings = {
   speed: 500,
   slidesToShow: 3,
   slidesToScroll: 1,
+  dotsClass: "testimonial-dots"
 };
 
 export default () => (
@@ -66,7 +73,7 @@ export default () => (
           <div className="col-lg-6">
             <div className="box wow fadeInLeft">
               <div className="icon">
-                <FontAwesomeIcon icon={faCar} className="mr-2"/>
+                <FontAwesomeIcon icon={faCar} className="mr-2" />
               </div>
               <h4 className="title">
                 <a href="">Lorem Ipsum</a>
@@ -82,7 +89,7 @@ export default () => (
           <div className="col-lg-6">
             <div className="box wow fadeInRight">
               <div className="icon">
-                <FontAwesomeIcon icon={faCar} className="mr-2"/>
+                <FontAwesomeIcon icon={faCar} className="mr-2" />
               </div>
               <h4 className="title">
                 <a href="">Dolor Sitema</a>
@@ -97,7 +104,7 @@ export default () => (
           <div className="col-lg-6">
             <div className="box wow fadeInLeft" data-wow-delay="0.2s">
               <div className="icon">
-                <FontAwesomeIcon icon={faCar} className="mr-2"/>
+                <FontAwesomeIcon icon={faCar} className="mr-2" />
               </div>
               <h4 className="title">
                 <a href="">Sed ut perspiciatis</a>
@@ -113,7 +120,7 @@ export default () => (
           <div className="col-lg-6">
             <div className="box wow fadeInRight" data-wow-delay="0.2s">
               <div className="icon">
-                <FontAwesomeIcon icon={faCar} className="mr-2"/>
+                <FontAwesomeIcon icon={faCar} className="mr-2" />
               </div>
               <h4 className="title">
                 <a href="">Magni Dolores</a>
@@ -288,146 +295,13 @@ export default () => (
           </p>
         </div>
 
-        <Slider {...settings} className="testimonials-carousel">
-          <div className="testimonial-item">
-          <div className="testimonial-item-wrapper">
-
-            <p>
-              <img
-                src="img/quote-sign-left.png"
-                className="quote-sign-left"
-                alt=""
-              />
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora
-              entum suscipit rhoncus. Accusantium quam, ultricies eget id,
-              aliquam eget nibh et. Maecen aliquam, risus at semper.
-              <img
-                src="img/quote-sign-right.png"
-                className="quote-sign-right"
-                alt=""
-              />
-            </p>
-            <img
-              src="img/testimonial-1.jpg"
-              className="testimonial-img"
-              alt=""
-            />
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-            </div>
-          </div>
-          
-          <div className="testimonial-item">
-            <div className="testimonial-item-wrapper">
-              <p>
-                <img
-                  src="img/quote-sign-left.png"
-                  className="quote-sign-left"
-                  alt=""
-                />
-                Proin iaculis purus consequat sem cure digni ssim donec porttitora
-                entum suscipit rhoncus. Accusantium quam, ultricies eget id,
-                aliquam eget nibh et. Maecen aliquam, risus at semper.
-                <img
-                  src="img/quote-sign-right.png"
-                  className="quote-sign-right"
-                  alt=""
-                />
-              </p>
-              <img
-                src="img/testimonial-5.jpg"
-                className="testimonial-img"
-                alt=""
-              />
-              <h3>Saul Goodman</h3>
-              <h4>Ceo &amp; Founder</h4>
-            </div>
-          </div>
-          
-          <div className="testimonial-item">
-          <div className="testimonial-item-wrapper">
-
-            <p>
-              <img
-                src="img/quote-sign-left.png"
-                className="quote-sign-left"
-                alt=""
-              />
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora
-              entum suscipit rhoncus. Accusantium quam, ultricies eget id,
-              aliquam eget nibh et. Maecen aliquam, risus at semper.
-              <img
-                src="img/quote-sign-right.png"
-                className="quote-sign-right"
-                alt=""
-              />
-            </p>
-            <img
-              src="img/testimonial-2.jpg"
-              className="testimonial-img"
-              alt=""
-            />
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-            </div>
-          </div>
-          
-
-          <div className="testimonial-item">
-          <div className="testimonial-item-wrapper">
-
-            <p>
-              <img
-                src="img/quote-sign-left.png"
-                className="quote-sign-left"
-                alt=""
-              />
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora
-              entum suscipit rhoncus. Accusantium quam, ultricies eget id,
-              aliquam eget nibh et. Maecen aliquam, risus at semper.
-              <img
-                src="img/quote-sign-right.png"
-                className="quote-sign-right"
-                alt=""
-              />
-            </p>
-            <img
-              src="img/testimonial-3.jpg"
-              className="testimonial-img"
-              alt=""
-            />
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-            </div>
-          </div>
-
-          <div className="testimonial-item">
-          <div className="testimonial-item-wrapper">
-
-            <p>
-              <img
-                src="img/quote-sign-left.png"
-                className="quote-sign-left"
-                alt=""
-              />
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora
-              entum suscipit rhoncus. Accusantium quam, ultricies eget id,
-              aliquam eget nibh et. Maecen aliquam, risus at semper.
-              <img
-                src="img/quote-sign-right.png"
-                className="quote-sign-right"
-                alt=""
-              />
-            </p>
-            <img
-              src="img/testimonial-4.jpg"
-              className="testimonial-img"
-              alt=""
-            />
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-            </div>
-          </div>
+        <Slider {...settings} className="testimonials-carousel mb-4">
+          <TestimonialItem />
+          <TestimonialItem />
+          <TestimonialItem />
+          <TestimonialItem />
+          <TestimonialItem />
+          <TestimonialItem />
         </Slider>
       </div>
     </section>
@@ -454,7 +328,6 @@ export default () => (
       </div>
     </section>
 
-
     <section id="contact" className="wow fadeInUp">
       <div className="container">
         <div className="section-header">
@@ -470,16 +343,19 @@ export default () => (
         <div className="row contact-info">
           <div className="col-md-4">
             <div className="contact-address">
-              <i className="ion-ios-location-outline"></i>
+              <FontAwesomeIcon icon={faMapPin} className="mr-2" />
               <h3>Address</h3>
-              <address>Gulab Vihar, Sector - D, Sainik Colony Near
-Tiny Tots School, Jammu 180011.</address>
+              <address>
+                Gulab Vihar, Sector - D, Sainik Colony Near Tiny Tots School,
+                Jammu 180011.
+              </address>
             </div>
           </div>
 
           <div className="col-md-4">
             <div className="contact-phone">
-              <i className="ion-ios-telephone-outline"></i>
+              <FontAwesomeIcon icon={faPhone} className="mr-2" />
+
               <h3>Phone Number</h3>
               <p>
                 <a href="tel:+155895548855">+91-6005488940, +91-9055000026</a>
@@ -489,10 +365,12 @@ Tiny Tots School, Jammu 180011.</address>
 
           <div className="col-md-4">
             <div className="contact-email">
-              <i className="ion-ios-email-outline"></i>
+              <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
               <h3>Email</h3>
               <p>
-                <a href="mailto:info.learn2motor@gmail.com">info.learn2motor@gmail.com</a>
+                <a href="mailto:info.learn2motor@gmail.com">
+                  info.learn2motor@gmail.com
+                </a>
               </p>
             </div>
           </div>
@@ -504,7 +382,6 @@ Tiny Tots School, Jammu 180011.</address>
         data-latitude="40.713732"
         data-longitude="-74.0092704"
       ></div>
-
     </section>
   </main>
 );
