@@ -5,7 +5,7 @@ import { faFacebook, faTwitter, faGooglePlus } from '@fortawesome/free-brands-sv
 
 function Toolbar() {
   return (
-      <div id="topbar" className="d-none d-lg-block">
+      <div id="topbar" className="d-none d-lg-block container">
         <div className="clearfix">
           <div className="contact-info float-left">
             <FontAwesomeIcon icon={faEnvelope} className="mr-2"/>
