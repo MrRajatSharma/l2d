@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #0c2e8a;
+  background: $accent;
   color: #fff;
 }
 
@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header #logo h1 a {
-  color: #0c2e8a;
+  color: $accent;
   line-height: 1;
   display: inline-block;
 }
@@ -179,7 +179,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #intro .intro-content h2 {
-  color: #0c2e8a;
+  color: $accent;
   margin-bottom: 30px;
   font-size: 64px;
   font-weight: 700;
@@ -210,13 +210,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #intro .intro-content .btn-get-started {
-  background: #0c2e8a;
-  border: 2px solid #0c2e8a;
+  background: $accent;
+  border: 2px solid $accent;
 }
 
 #intro .intro-content .btn-get-started:hover {
   background: none;
-  color: #0c2e8a;
+  color: $accent;
 }
 
 #intro .intro-content .btn-projects {
@@ -497,7 +497,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .section-header h2 {
   font-size: 32px;
-  color: #0c2e8a;
+  color: $accent;
   text-transform: uppercase;
   font-weight: 700;
   position: relative;
@@ -546,7 +546,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .content h2 {
-  color: #0c2e8a;
+  color: $accent;
   font-weight: 700;
   font-size: 36px;
   font-family: "Raleway", sans-serif;
@@ -751,6 +751,35 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 30px 0;
 }
 
+.testimonial-dots {
+  color: $gray-300;
+  text-align: center;
+  list-style: none;
+
+  li {
+    display: inline-block;
+    border: 5em;
+    border-radius: 5em;
+    margin: 0 3px;  
+
+    &.slick-active button {
+      background: $accent !important;
+      color: $accent !important;
+    }
+    button {
+      color: $gray-300;
+      background: $gray-300;
+      border-radius: 5em;
+      border: none;
+      padding: 4px;
+      /* font-size: 0px; */
+      line-height: .6;
+      content: "";
+    }
+  }
+
+}
+
 #testimonials .testimonial-item {
   padding: 20px 20px;
   text-align: center;
@@ -792,13 +821,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-right: 10px;
   display: inline-block;
   width: 37px;
+  color: $blue;
 }
 
 #testimonials .testimonial-item .quote-sign-right {
-  margin-bottom: -15px;
   padding-left: 10px;
   display: inline-block;
   max-width: 100%;
+  color: $blue;
   width: 37px;
 }
 
@@ -1064,5 +1094,5 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .credits a {
-  color: #0c2e8a;
+  color: $accent;
 }
