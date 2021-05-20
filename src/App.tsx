@@ -1,28 +1,22 @@
 import React, { useState } from "react";
-import { Button, Modal, ModalHeader, ModalBody } from "reactstrap";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Main from "./components/Main";
 import Toolbar from "./components/Toolbar";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
     const [modal, setModal] = useState(false);
     const toggle = () => setModal(!modal);
 
     return (
-        <div className="App container py-3">
+        <div className="App py-3">
             <Toolbar />
-            <h1>Hello, pals!</h1>
-
-            <p>
-                Take a look at <code>./src/styles/_theme.scss</code> to see how this Bootstrap theme was created.
-            </p>
-
-            <Button color="primary" onClick={toggle}>Click me!</Button>
-
-            <Modal isOpen={modal} toggle={toggle}>
-                <ModalHeader toggle={toggle}>This is modal</ModalHeader>
-                <ModalBody>
-                    Click outside to close this
-                </ModalBody>
-            </Modal>
+            <Header />
+            <Main />
+            <Footer />
         </div>
     );
 }
