@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     svg {
-      color: $primary;
+      color: $accent;
     }
   }
   
@@ -609,7 +609,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .box .icon svg {
-  color: #a3ebd5;
+  color: $accent;
   font-size: 64px;
   transition: 0.5s;
   line-height: 0;
@@ -785,7 +785,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   
   .testimonial-item-wrapper {
+  transition: 0.4s;
+
+    &:hover {
+      box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+      transform: translateY(-10px);
+      -webkit-transform: translateY(-10px);
+      -moz-transform: translateY(-10px);
+    }
+
     padding: 2em;
+    border-radius: $border-radius;
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   }
 }
@@ -968,7 +978,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 48px;
   display: inline-block;
   margin-bottom: 10px;
-  color: $primary;
+  color: $accent;
 }
 
 #contact .contact-info address, #contact .contact-info p {
@@ -981,7 +991,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 15px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #999;
+  color: #081e5b;
 }
 
 #contact .contact-info a {
