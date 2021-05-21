@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {
   faCar,
+  faCheckCircle,
   faEnvelope,
   faMapPin,
   faPhone,
@@ -30,26 +31,27 @@ export default () => (
           </div>
 
           <div className="col-lg-6 content">
-            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
+            <h2>About Learn 2 Motor</h2>
             <h3>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum.
+            Learn2Motor Driving School, most prestigious driving institute of J&K not
+            just imparts better driving skills but also tries to
+            inculcate overall safe driving culture
+            Benefits of L2M are numerous, few of
+            them are as follows:-
             </h3>
 
             <ul>
               <li>
-                <i className="ion-android-checkmark-circle"></i> Ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                <FontAwesomeIcon icon={faCheckCircle} /> Caters to requirements of all – novices, drivers, corporates, etc
               </li>
               <li>
-                <i className="ion-android-checkmark-circle"></i> Duis aute irure
-                dolor in reprehenderit in voluptate velit.
+                <FontAwesomeIcon icon={faCheckCircle} /> Advance simulators
               </li>
               <li>
-                <i className="ion-android-checkmark-circle"></i> Ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate trideta storacalaperda mastiro
-                dolore eu fugiat nulla pariatur.
+                <FontAwesomeIcon icon={faCheckCircle} /> Curriculum as per the Motor Vehicles Act
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faCheckCircle} /> Awareness of Traffic laws, Road signs & markings
               </li>
             </ul>
           </div>
