@@ -4,7 +4,7 @@ export default () => (
   <div className="container">
 
     <div id="logo" className="float-left">
-      <h1><a href="#body" className="scrollto">Learn<span>2</span>Motor</a></h1>
+      <h1><a href="/" className="scrollto">Learn<span>2</span>Motor</a></h1>
 
       {/* <a href="#body"><img src="img/logo.png" alt="" title="" /></a> */}
     </div>
