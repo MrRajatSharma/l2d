@@ -49,7 +49,7 @@ export default () => {
           {faqs.map((x, idx) => (
             <li
               className={`faq__item row ${idx === currentOpen && 'faq__item_active'}`}
-              onClick={() => setCurrentOpen(idx == currentOpen ? -1 : idx)}
+              onClick={() => setCurrentOpen(idx === currentOpen ? -1 : idx)}
             >
               <div className="col-md-7">
                 <div className="faq__question">{x.question}</div>
