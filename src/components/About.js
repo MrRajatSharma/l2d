@@ -9,7 +9,7 @@ export default () => {
     }).init();
   }, []);
   return (
-    <section id="about" className="wow fadeInUp" data-wow-delay="0.5s">
+    <section id="about" className="wow fadeIn" data-wow-delay="0.5s">
       <div className="container">
         <div className="row">
           <div className="offset-5 col-lg-6 content driving-info-section">
@@ -27,7 +27,7 @@ export default () => {
                 volutpat. lobortis sem consequat consequat imperdiet. In nulla
                 sed viverraut loremut tetur diam nunc bibendum sed imperdiets.{" "}
               </div>
-              <div className="icon-box">
+              <div className="icon-box wow fadeInRight" data-wow-delay="0.1s">
                 <div className="icon">
                   <img
                     src="/img/steering-wheel.png"
@@ -45,7 +45,7 @@ export default () => {
                   </div>
                 </div>
               </div>
-              <div className="icon-box">
+              <div className="icon-box wow fadeInRight" data-wow-delay="0.2s">
                 <div className="icon">
                   <img
                     src="/img/car-insurance.png"
