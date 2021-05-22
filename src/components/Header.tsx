@@ -1,6 +1,7 @@
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
+
 export default () => (
   <header id="header">
   <div className="container d-flex align-items-center justify-content-between">
