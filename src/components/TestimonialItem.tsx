@@ -14,7 +14,7 @@ export default () => (
       </p>
       <img src="img/testimonial-3.jpg" className="testimonial-img" alt="" />
       <h3>Sapna</h3>
-      <h4>Ceo &amp; L2M</h4>
+      <h4>Ceo @ L2M</h4>
     </div>
   </div>
 );
