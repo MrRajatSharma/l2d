@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  padding: 20px 0;
+  padding: 10px 0;
   height: 84px;
   transition: all 0.5s;
   z-index: 997;
@@ -138,6 +138,7 @@ h1, h2, h3, h4, h5, h6 {
 #header #logo img {
   padding: 0;
   margin: 0;
+  max-height: 76px;
 }
 
 @media (max-width: 768px) {
@@ -319,6 +320,7 @@ h1, h2, h3, h4, h5, h6 {
 #nav-menu-container {
   float: right;
   margin: 0;
+  padding: 15px 0;
 }
 
 @media (max-width: 768px) {
