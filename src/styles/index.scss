@@ -973,6 +973,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   &__question {
     font-weight: 700;
     cursor: pointer;
+    user-select: none;
 
     &::before {
       top: 7px;
