@@ -23,9 +23,9 @@ export default () => {
                 </h2>
               </div>
               <div className="text mb-30">
-                Nunc quam arcu, pretium quis quam sed, laoreet efficitur aliquam
-                volutpat. lobortis sem consequat consequat imperdiet. In nulla
-                sed viverraut loremut tetur diam nunc bibendum sed imperdiets.{" "}
+                Learn2Motor Driving School, most prestigious driving institute of J&amp;K not
+                just imparts better driving skills but also tries to
+                inculcate overall safe driving culture.
               </div>
               <div className="icon-box wow fadeInRight" data-wow-delay="0.1s">
                 <div className="icon">
