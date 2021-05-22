@@ -257,6 +257,63 @@ h1, h2, h3, h4, h5, h6 {
   transition-property: opacity;
 }
 
+.text {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #555555;
+  margin: 0px 0px 15px;
+}
+
+.sec-title .sub-title {
+  position: relative;
+  font-size: 13px;
+  padding-bottom: 15px;
+  color: #777777;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+
+  &:before {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 63px;
+    bottom: 0;
+    left: 0;
+    background-image: url(/img/shape-3.png);
+  }
+}
+
+.driving-info-section .icon-box {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  .icon {
+    margin-right: 30px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  
+  }
+  .content {
+    width: calc(100% - 105px);
+    margin-bottom: 15px;
+  }
+
+  h4 {
+    position: relative;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.text {
+  position: relative;
+  margin-bottom: 0;
+}
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -507,14 +564,22 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .section-header h2::before {
-  content: '';
+  // content: '';
+  // position: absolute;
+  // display: block;
+  // width: 50px;
+  // height: 3px;
+  // background: $primary;
+  // bottom: 0;
+  // left: 0;
   position: absolute;
-  display: block;
-  width: 50px;
+  content: '';
   height: 3px;
-  background: $primary;
+  width: 63px;
   bottom: 0;
   left: 0;
+  background-image: url(/img/shape-3.png);
+
 }
 
 .section-header p {
@@ -525,7 +590,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* About Section
 --------------------------------*/
 #about {
-  padding: 60px 0 30px 0;
+  background: url(/img/bgimg2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5em 0;
 }
 
 #about .about-img {
@@ -586,8 +654,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Services Section
 --------------------------------*/
 #services {
-  padding: 30px 0 0 0;
+  background: aliceblue;
+  padding: 5em 0;
 }
+
 
 #services .box {
   padding: 40px;
@@ -648,41 +718,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-left: 0;
     text-align: center;
   }
-}
-
-/* Clients Section
---------------------------------*/
-#clients {
-  padding: 30px 0;
-}
-
-#clients img {
-  max-width: 100%;
-  opacity: 0.5;
-  transition: 0.3s;
-  padding: 15px 0;
-}
-
-#clients img:hover {
-  opacity: 1;
-}
-
-#clients .owl-nav, #clients .owl-dots {
-  margin-top: 5px;
-  text-align: center;
-}
-
-#clients .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ddd;
-}
-
-#clients .owl-dot.active {
-  background-color: $primary;
 }
 
 /* Our Portfolio Section
@@ -910,63 +945,60 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 3px solid $primary;
 }
 
-/* Our Team Section
---------------------------------*/
-#team {
-  background: #fff;
-  padding: 30px 0 0 0;
-}
+// FAQ
 
-#team .member {
-  text-align: center;
-  margin-bottom: 20px;
-}
+.faq {
+  background: aliceblue;
+  padding: 5em 0;
+  background: #f9fafb url(/img/bg-faq.jpg);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
 
-#team .member .pic {
-  overflow: hidden;
-  text-align: center;
-}
+  &__item {
+    position: relative;
+    margin-bottom: 35px;
+    padding-left: 24px;
+  }
 
-#team .member .pic img {
-  max-width: 100%;
-}
+  &__answer {
+    font-size: 15px;
+    line-height: 1.73334;
+    display: none;
+  }
 
-#team .member .details {
-  background: $primary;
-  color: #fff;
-  padding: 15px;
-  border-radius: 0 0 3px 3px;
-}
+  &__item_active &__answer, .feature {
+    display: block;
+    overflow-x: hidden;
+  }
+  &__question {
+    font-weight: 700;
+    cursor: pointer;
 
-#team .member h4 {
-  font-weight: 700;
-  margin-bottom: 2px;
-  font-size: 18px;
-}
+    &::before {
+      top: 7px;
+      left: -10px;
+      width: 14px;
+      height: 2px;
+    }
+    &::after{
+      top: 1px;
+      left: -4px;
+      width: 2px;
+      height: 14px;
+    }
+    &:after, &:before {
+      position: absolute;
+      content: '';
+      background-color: #4c8cca;
+    }
+  }
 
-#team .member span {
-  font-style: italic;
-  display: block;
-  font-size: 13px;
-}
-
-#team .member .social {
-  margin-top: 5px;
-}
-
-#team .member .social a {
-  color: #fff;
-}
-
-#team .member .social i {
-  font-size: 16px;
-  margin: 0 2px;
-}
+} 
 
 /* Contact Section
 --------------------------------*/
 #contact {
-  padding: 30px 0;
+  padding: 5em 0;
 }
 
 #contact .contact-info {
