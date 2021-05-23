@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from "react";
-import WOW from "wowjs";;
+import React, { useEffect } from "react";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import WOW from "wowjs";
 
 
 export default () => {
@@ -62,6 +64,9 @@ export default () => {
                   </div>
                 </div>
               </div>
+
+              <a href="tel:+916005488940" className="btn btn-outline-primary px-5 mt-4"><FontAwesomeIcon icon={faPhone} className="mr-2"/> Book now <br />+91-600 548 8940</a>
+
             </div>
           </div>
         </div>
