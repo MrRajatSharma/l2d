@@ -4,6 +4,7 @@ export default () => (
   <section id="portfolio" className="wow fadeInUp">
       <div className="container">
         <div className="section-header">
+          <img className="section-header__icon" src="/img/portfolio.png" />
           <h2>Our Portfolio</h2>
           {/* <p>
             Sed tamen tempor magna labore dolore dolor sint tempor duis magna

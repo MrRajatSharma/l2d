@@ -37,6 +37,7 @@ export default () => {
     <div className="faq">
       <div className="container">
         <div className="section-header">
+          <img className="section-header__icon" src="/img/conversation.png" />
           <h2>FAQ</h2>
           <p>
             Sed tamen tempor magna labore dolore dolor sint tempor duis magna

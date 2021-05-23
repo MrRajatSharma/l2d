@@ -4,6 +4,7 @@ export default () => (
   <section id="services">
       <div className="container">
         <div className="section-header">
+          <img className="section-header__icon" src="/img/technical-support.png" />
           <h2>Services</h2>
           <p>
             Sed tamen tempor magna labore dolore dolor sint tempor duis magna

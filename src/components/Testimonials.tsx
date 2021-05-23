@@ -19,7 +19,10 @@ export default () => (
   <section id="testimonials" className="wow fadeInUp">
       <div className="container">
         <div className="section-header">
-          <h2>Testimonials</h2>
+          <img className="section-header__icon" src="/img/testimonial.png" />
+          <h2>
+            Testimonials
+          </h2>
           <p>
             Sed tamen tempor magna labore dolore dolor sint tempor duis magna
             elit veniam aliqua esse amet veniam enim export quid quid veniam
