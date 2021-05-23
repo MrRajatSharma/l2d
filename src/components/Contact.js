@@ -7,6 +7,7 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import GoogleMap from './GoogleMap';
 
 export default () => (
   <section id="contact" className="wow fadeInUp">
@@ -58,10 +59,7 @@ export default () => (
         </div>
       </div>
 
-      <div
-        id="google-map"
-        data-latitude="40.713732"
-        data-longitude="-74.0092704"
-      ></div>
+
+      <GoogleMap />
     </section>
 )
