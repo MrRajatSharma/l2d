@@ -18,7 +18,7 @@ export default () => {
             <div className="content-block">
               <div className="sec-title mb-20">
                 <div className="sub-title">
-                  countless benefits of Drive 2 Motor
+                  About Learn 2 Motor driving school
                 </div>
                 <h2>
                   Modern Technologies <br /> For Much Easier Driving

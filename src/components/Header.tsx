@@ -9,7 +9,7 @@ export default () => (
     <div id="logo" className="float-left">
       {/* <h1><a href="/" className="scrollto">Learn<span>2</span>Motor</a></h1> */}
 
-      <a href="#body"><img src="logo2.jpg" alt="Drive 2 Motor " title="Drive 2 Motor" /></a>
+      <a href="#body"><img src="logo2.jpg" alt="Learn 2 Motor " title="Learn 2 Motor" /></a>
     </div>
 
     <nav id="nav-menu-container" className="d-flex align-items-center ">
