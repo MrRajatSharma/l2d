@@ -13,7 +13,7 @@ export default () => {
   return (
     <section id="about" className="wow fadeIn" data-wow-delay="0.5s">
       <div className="container">
-        <div className="row">
+        <div className="row flex-row-reverse">
           <div className="offset-5 col-lg-6 content driving-info-section">
             <div className="content-block">
               <div className="sec-title mb-20">
